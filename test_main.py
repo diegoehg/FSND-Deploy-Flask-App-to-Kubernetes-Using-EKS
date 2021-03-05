@@ -18,6 +18,7 @@ def client():
     main.APP.config['TESTING'] = True
     client = main.APP.test_client()
 
+    assert False
     yield client
 
 
